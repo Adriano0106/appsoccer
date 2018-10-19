@@ -1,0 +1,29 @@
+<div class="centered">
+  <%= form_with(model: campeonato, local: true) do |form| %>
+    <% if campeonato.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(campeonato.errors.count, "error") %> prohibited this campeonato from being saved:</h2>
+
+        <ul>
+        <% campeonato.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>form-group
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="form-group col-lg-4 col-md-5 col-sm-6 col-xs-6">
+      <%= form.label :name %>
+      <%= form.text_field :name, class: "form-control centered" %>
+    </div>
+
+    <div class="form-group col-lg-4 col-md-5 col-sm-6 col-xs-6">
+      <%= form.label :description %>
+      <%= form.text_field :description, class: "form-control centered" %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit class:"btn btn-success" %>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,42 @@
+<div class="centered">
+    <p id="notice"><%= notice %></p>
+
+    <div class="form-group col-lg-4 col-md-5 col-sm-6 col-xs-6">
+        <p>
+            <strong>Name:</strong>
+            <div class="form-control">
+                <%= @player.name %>
+            </div>
+        </p>
+    </div>
+
+    <div class="form-group col-lg-4 col-md-5 col-sm-6 col-xs-6">
+        <p>
+            <strong>Birth:</strong>
+            <div class="form-control">
+                <%= @player.birth %>
+            </div>
+        </p>
+    </div>
+
+    <div class="form-group col-lg-4 col-md-5 col-sm-6 col-xs-6">
+        <p>
+            <strong>Clube:</strong>
+            <div class="form-control">
+                <%= @player.clube.name %>
+            </div>
+        </p>
+    </div>
+
+    <div class="form-group col-lg-4 col-md-5 col-sm-6 col-xs-6">
+        <p>
+            <strong>Trophy:</strong>
+            <div class="form-control">
+                <%= @player.trophy %>
+            </div>
+        </p>
+    </div>
+
+    <%= link_to 'Edit', edit_player_path(@player), class:"btn btn-success" %>
+    <%= link_to 'Back', players_path, class:"btn btn-secondary" %>
+</div>
