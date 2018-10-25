@@ -26,7 +26,7 @@
           <td><%= clube.campeonato.name %></td>
           <td><%= link_to t('show'), clube %></td>
           <td><%= link_to t('edit'), edit_clube_path(clube) %></td>
-          <td><%= link_to t('destroy'), clube, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to t('destroy'), clube, method: :delete, data: { confirm: t('confirm') } %></td>
         </tr>
       <% end %>
     </tbody>
