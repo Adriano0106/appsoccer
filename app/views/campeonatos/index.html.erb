@@ -1,7 +1,7 @@
 <div class="centered">
   <p id="notice"><%= notice %></p>
 
-  <h1>Campeonatos</h1>
+  <h1><%= t('championship.championships') %></h1>
 
   <%= search_form_for @q do |f| %>
       <%= f.search_field :name_cont, placeholder:'Nome do campeonato', class:"form-control col-lg-4 col-md-5 col-sm-6 col-xs-6"  %>
@@ -12,9 +12,9 @@
   <table class="table table-striped table-dark table-hover">
     <thead class="thead-dark">
       <tr>
-        <th>Name</th>
-        <th>Description</th>
-        <th colspan="3">Options</th>
+        <th><%= t('name') %></th>
+        <th><%= t('description') %></th>
+        <th colspan="3"><%= t('options') %></th>
       </tr>
     </thead>
 
@@ -23,9 +23,9 @@
         <tr>
           <td><%= campeonato.name %></td>
           <td><%= campeonato.description %></td>
-          <td><%= link_to 'Show', campeonato %></td>
-          <td><%= link_to 'Edit', edit_campeonato_path(campeonato) %></td>
-          <td><%= link_to 'Destroy', campeonato, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to t('show'), campeonato %></td>
+          <td><%= link_to t('edit'), edit_campeonato_path(campeonato) %></td>
+          <td><%= link_to t('destroy'), campeonato, method: :delete, data: { confirm: t('confirm') } %></td>
         </tr>
       <% end %>
     </tbody>
@@ -33,6 +33,6 @@
 
   <br>
 
-  <%= link_to 'New Campeonato', new_campeonato_path, class:"btn btn-success" %>
-  <%= link_to 'Back', root_path, class:"btn btn-dark" %>
+  <%= link_to t('championship.new'), new_campeonato_path, class:"btn btn-success" %>
+  <%= link_to t('back'), root_path, class:"btn btn-dark" %>
 </div>

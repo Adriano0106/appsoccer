@@ -12,23 +12,23 @@
   championship:
     championship-title: "Campeonato"
     championships: "Campeonatos"
-    new-champ: "Novo Campeonato"
-    edit-champ: "Editando Campeonato"
+    new: "Novo Campeonato"
+    edit: "Editando Campeonato"
 
   club:
     club-title: "Clube"
     clubs: "Clubes"
     birth: "Fundação"
-    new-club: "Novo Clube"
-    edit-club: "Editando Clube"
+    new: "Novo Clube"
+    edit: "Editando Clube"
 
   player:
     player-title: "Jogador"
     players: "Jogadores"
     birth: "Ano"
     trophy: "Títulos"
-    new-player: "Novo Jogador"
-    edit-player: "Editando Jogador"
+    new: "Novo Jogador"
+    edit: "Editando Jogador"
 
 
 # pt-BR:

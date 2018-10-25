@@ -3,7 +3,7 @@
 
     <div class="form-group col-lg-4 col-md-5 col-sm-6 col-xs-6">
       <p>
-        <strong>Name:</strong>
+        <strong><%= t('name') %>:</strong>
         <div class="form-control">
           <%= @campeonato.name %>
         </div>
@@ -12,13 +12,13 @@
 
     <div class="form-group col-lg-4 col-md-5 col-sm-6 col-xs-6">
       <p>
-        <strong>Description:</strong>
+        <strong><%= t('description') %>:</strong>
         <textarea class="form-control">
           <%= @campeonato.description %>
         </textarea>
       </p>
     </div>
 
-    <%= link_to 'Edit', edit_campeonato_path(@campeonato),  class: "btn btn-secondary" %>
-    <%= link_to 'Back', campeonatos_path,  class: "btn btn-secondary" %>
+    <%= link_to t('edit'), edit_campeonato_path(@campeonato),  class: "btn btn-secondary" %>
+    <%= link_to t('back'), campeonatos_path,  class: "btn btn-secondary" %>
 </div>
