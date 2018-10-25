@@ -24,7 +24,7 @@
 
     <div class="form-group col-lg-4 col-md-5 col-sm-6 col-xs-6">
       <%= form.label :campeonato_id %>
-      <%= collection_select(:clube, :campeonato_id, @campeonato_options, :id, :name, {class: 'form-control centered'}) %>
+      <%= collection_select(:clube, :campeonato_id, @campeonato_options, :id, :name, {}, class: "form-control centered") %>
     </div>
 
     <div class="actions">
