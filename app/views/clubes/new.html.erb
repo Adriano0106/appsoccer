@@ -1,7 +1,7 @@
 <div class="centered">
-    <h1>New Clube</h1>
+    <h1><%= t('club.new') %></h1>
 
     <%= render 'form', clube: @clube %>
 
-    <%= link_to 'Back', clubes_path, class:"btn btn-secondary" %>
+    <%= link_to t('back'), clubes_path, class:"btn btn-secondary" %>
 </div>

@@ -3,7 +3,7 @@
 
     <div class="form-group col-lg-4 col-md-5 col-sm-6 col-xs-6">
         <p>
-            <strong>Name:</strong>
+            <strong><%= t('name') %>:</strong>
             <div class="form-control">
                 <%= @player.name %>
             </div>
@@ -12,7 +12,7 @@
 
     <div class="form-group col-lg-4 col-md-5 col-sm-6 col-xs-6">
         <p>
-            <strong>Birth:</strong>
+            <strong><%= t('player.birth') %>:</strong>
             <div class="form-control">
                 <%= @player.birth %>
             </div>
@@ -21,7 +21,7 @@
 
     <div class="form-group col-lg-4 col-md-5 col-sm-6 col-xs-6">
         <p>
-            <strong>Clube:</strong>
+            <strong><%= t('club.club-title') %>:</strong>
             <div class="form-control">
                 <%= @player.clube.name %>
             </div>
@@ -30,13 +30,13 @@
 
     <div class="form-group col-lg-4 col-md-5 col-sm-6 col-xs-6">
         <p>
-            <strong>Trophy:</strong>
+            <strong><%= t('player.trophy') %>:</strong>
             <div class="form-control">
                 <%= @player.trophy %>
             </div>
         </p>
     </div>
 
-    <%= link_to 'Edit', edit_player_path(@player), class:"btn btn-success" %>
-    <%= link_to 'Back', players_path, class:"btn btn-secondary" %>
+    <%= link_to t('edit'), edit_player_path(@player), class:"btn btn-success" %>
+    <%= link_to t('back'), players_path, class:"btn btn-secondary" %>
 </div>

@@ -1,8 +1,8 @@
 <div class="centered">
-    <h1>Editing Clube</h1>
+    <h1><%= t('club.edit') %></h1>
 
     <%= render 'form', clube: @clube %>
 
-    <%= link_to 'Show', @clube, class:"btn btn-info" %>
-    <%= link_to 'Back', clubes_path, class:"btn btn-secondary" %>
+    <%= link_to t('show'), @clube, class:"btn btn-info" %>
+    <%= link_to t('back'), clubes_path, class:"btn btn-secondary" %>
 </div>

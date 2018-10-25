@@ -2,7 +2,7 @@
   <p id="notice"><%= notice %></p>
   <div class="form-group col-lg-4 col-md-5 col-sm-6 col-xs-6">
     <p>
-      <strong>Name:</strong>
+      <strong><%= t('name') %>:</strong>
       <div class="form-control">
         <%= @clube.name %>
       </div>
@@ -11,7 +11,7 @@
 
   <div class="form-group col-lg-4 col-md-5 col-sm-6 col-xs-6">
     <p>
-      <strong>Birth:</strong>
+      <strong><%= t('club.birth') %>:</strong>
       <div class="form-control">
         <%= @clube.birth %>
       </div>
@@ -20,13 +20,13 @@
 
   <div class="form-group col-lg-4 col-md-5 col-sm-6 col-xs-6">
     <p>
-      <strong>Campeonato:</strong>
+      <strong><%= t('championship.championship-title') %>:</strong>
       <div class="form-control">
         <%= @clube.campeonato.name %>
       </div>
     </p>
   </div>
 
-    <%= link_to 'Edit', edit_clube_path(@clube), class:"btn btn-info" %>
-    <%= link_to 'Back', clubes_path, class:"btn btn-secondary" %>
+    <%= link_to t('edit'), edit_clube_path(@clube), class:"btn btn-info" %>
+    <%= link_to t('back'), clubes_path, class:"btn btn-secondary" %>
 </div>
