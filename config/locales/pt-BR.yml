@@ -1,0 +1,52 @@
+"pt-BR":
+  home: "Página Inicial"
+  show: "Mostrar"
+  edit: "Editar"
+  destroy: "Deletar"
+  name: "Nome"
+  description: "Descrição"
+  options: "Opções"
+  back: "Voltar"
+  confirm: "Você tem certeza?"
+
+  championship:
+    championship-title: "Campeonato"
+    championships: "Campeonatos"
+    new-champ: "Novo Campeonato"
+    edit-champ: "Editando Campeonato"
+
+  club:
+    club-title: "Clube"
+    clubs: "Clubes"
+    birth: "Fundação"
+    new-club: "Novo Clube"
+    edit-club: "Editando Clube"
+
+  player:
+    player-title: "Jogador"
+    players: "Jogadores"
+    birth: "Ano"
+    trophy: "Títulos"
+    new-player: "Novo Jogador"
+    edit-player: "Editando Jogador"
+
+
+# pt-BR:
+#   home: "Página Inicial"
+#   show: "Mostrar"
+#   edit: "Editar"
+#   destroy: "Deletar"
+#   name: "Nome"
+#   description: "Descrição"
+#   options: "Opções"
+#   championship: "Campeonato"
+#     championships: "Campeonatos"
+#   back: "Voltar"
+
+#   club: "Clube"
+#     birth: "Fundação"
+#     clubs: "Clubes"
+
+#   player: "Jogador"
+#     birth: "Ano"
+#     players: "Jogadores"
