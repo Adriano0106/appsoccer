@@ -1,8 +1,20 @@
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-#   campeonato_id (1: Paulista), (2: Brasileiro), (3: Premier League), (4: La Liga), (5: Serie A Tim), (6: Ligue 1), (7: MLS)
-#   exemplo
-#   Clube.create(name: 'Barcelona', birth: 1899, campeonato_id: 4)
+p "Campeonatos sendo criados..."
+Campeonato.create(name: '', description: '')
+Campeonato.create(name: '', description: '')
+Campeonato.create(name: '', description: '')
+Campeonato.create(name: '', description: '')
+Campeonato.create(name: '', description: '')
+Campeonato.create(name: '', description: '')
+Campeonato.create(name: '', description: '')
+p "Campeonatos criados"
+
+p "Clubes sendo criados..."
+Clube.create(name: 'Valencia', birth: 1909, campeonato_id: 4)
+Clube.create(name: 'Sevilla', birth: 1890, campeonato_id: 4)
+Clube.create(name: 'Atlético de Madrid', birth: 1903, campeonato_id: 4)
+Clube.create(name: 'Villarreal', birth: 1923, campeonato_id: 4)
+p "Clubes criados"
+
 p "Jogadores sendo criados..."
 Player.create(name: 'Manuel Neuer', birth: 1988, clube_id: 11, trophy: 10)
 Player.create(name: 'Mats Hummels', birth: 1988, clube_id: 11, trophy: 10)
